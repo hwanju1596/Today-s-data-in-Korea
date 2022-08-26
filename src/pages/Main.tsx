@@ -4,7 +4,7 @@ import Layout from '../components/Layout/Layout';
 const Main = () => {
   return (
     <Layout>
-    asdfff
+    Main Section
     </Layout>
   );
 }
