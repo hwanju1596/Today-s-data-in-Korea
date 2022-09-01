@@ -1,3 +1,8 @@
 {
-    "terminal.integrated.fontFamily": "D2Coding"
+    "terminal.integrated.fontFamily": "D2Coding",
+    "prettier.htmlWhitespaceSensitivity": "css",
+    "prettier.jsxSingleQuote": true,
+    "prettier.requireConfig": false,
+    "prettier.singleQuote": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
