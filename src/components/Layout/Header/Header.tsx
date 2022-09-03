@@ -2,10 +2,10 @@ import * as React from "react";
 import Toolbar from "@mui/material/Toolbar";
 import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
-import SearchIcon from "@mui/icons-material/Search";
 import Link from "@mui/material/Link";
 import { Popover, TextField, Typography } from "@mui/material";
 import SearchPopover from "../../SearchPopover";
+import SearchDiaLog from "../../SearchDialog";
 
 interface HeaderProps {
   sections: ReadonlyArray<{
@@ -24,10 +24,8 @@ export default function Header(props: HeaderProps) {
         <Button size="large" sx={{ flex: 0.3 }}>
           {title}
         </Button>
-        <Button sx={{ flex: 1 }} id="standard-basic" variant="outlined">
-          {<SearchIcon />}농작물을 입력해주세요.
-        </Button>
-        <SearchPopover/>
+        {/* <SearchPopover title="농작물을 입력해주세요."/> */}
+        <SearchDiaLog title="농작물을 입력해주세요."/>
         <Button sx={{ borderBottom: 0.1 }} size="small">
           로그인
         </Button>
